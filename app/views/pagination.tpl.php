@@ -4,8 +4,8 @@
     <li class="page-item"><a class="page-link" href="?data=<?=$dataType?>&page=1">First Page</a></li>
     <li class="page-item"><a class="page-link" href="?data=<?=$dataType?>&page=<?=$currentPage-1?>">Previous</a></li>
   <?php else : ?>  
-    <li class="page-item disabled"><a class="page-link">First</a></li>
-    <li class="page-item disabled"><a class="page-link">Previous</a></li>
+    <li class="page-item disabled"><span class="page-link">First</span></li>
+    <li class="page-item disabled"><span class="page-link">Previous</span></li>
   <?php endif; ?>
   <?php for ( $pageNum=$currentPage-$activeLink; $pageNum<=$pageLast; $pageNum++ ) : ?>
   <?php if ( $pageNum>0 ) : ?>
@@ -26,8 +26,8 @@
     <li class="page-item"><a class="page-link" href="?data=<?=$dataType?>&page=<?=$currentPage+1?>">Next</a></li>
     <li class="page-item"><a class="page-link" href="?data=<?=$dataType?>&page=<?=$pageLast?>">Last Page</a></li>
   <?php else : ?>
-    <li class="page-item disabled"><a class="page-link">Next</a></li>
-    <li class="page-item disabled"><a class="page-link">Last Page</a></li>
+    <li class="page-item disabled"><span class="page-link">Next</span></li>
+    <li class="page-item disabled"><span class="page-link">Last Page</span></li>
   <?php endif; ?>
   </ul>
 </nav>

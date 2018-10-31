@@ -8,6 +8,16 @@
     <title>Pagination</title>
     <style>
     body{ background-color: silver; }
+    .container{
+        padding: 50px 25px;
+        background-color: #fff;
+        margin-top: 50px;
+        box-shadow: 0 4px 10px 10px rgba(0,0,0,.3);
+        border-radius: 4px;
+    }
+    .nav-pills .nav-link {
+    border-radius: 0; 
+    }
     </style>
 </head>
 <body>

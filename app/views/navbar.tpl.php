@@ -1,4 +1,5 @@
-<h4 class="text-center"><?=$dataType?></h4>
+
+<h4 class="text-center mb-4">Data from&nbsp;<?=strtoupper($dataType)?></h4>
 <ul class="nav nav-pills nav-fill">
   <li class="nav-item">
     <a class="nav-link <?=$dataType==='sql'? 'disabled' : 'active' ?>" href="?data=sql">sql</a>
